@@ -14,9 +14,17 @@ export class HousingListComponent implements OnInit {
   }
 
   searchHousingLocations(searchText: string) {
-    console.log(searchText);
-    
+    if (!searchText)
+      return;
+
+    this.results = this.locationList.filter(
+      (location: HousingLocation) => location.city
+      .toLowerCase()
+      .includes(
+          searchText.toLowerCase()
+    ));
   }
 
   @Input() locationList: HousingLocation[] = [];
+  results: HousingLocation[] = [];
 }
