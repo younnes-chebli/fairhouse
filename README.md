@@ -14,6 +14,5 @@ Here's a preview of the finished application:
 ![Completed application - one column search results, second column search details](9yB5AM9sBgVwfTR.png)
 
 TODO
-* Refactor the data into an Angular Service
 * Add a route for the details page
 * Use Angular HTTP to retrieve the data
